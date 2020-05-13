@@ -20,6 +20,9 @@ jobs:
       with:
         dotnet-version: '3.1.102'
 
+      name: Get BLazor Templates
+      run: dotnet new -i Microsoft.AspNetCore.Components.WebAssembly.Templates::3.2.0-rc1.20223.4
+
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
